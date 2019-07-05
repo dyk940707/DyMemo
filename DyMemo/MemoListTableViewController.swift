@@ -27,7 +27,11 @@ class MemoListTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    //테이블 뷰한테 데이터를 다시 읽으라고 명령
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     // MARK: - Table view data source
 
 
