@@ -10,6 +10,14 @@ import UIKit
 
 class MemoListTableViewController: UITableViewController {
 
+    let formatter: DateFormatter = {
+       let f = DateFormatter()
+        f.dateStyle = .long
+        f.timeStyle = .none
+        f.locale = Locale(identifier: "Ko_kr")
+        return f
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,25 +30,27 @@ class MemoListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return Memo.dummyMemoList.count //셀에 표기할 수
     }
 
-    /*
+    //1.테이블 뷰 배치
+    //2.프로토타입 셀 디자인
+    //3.샐 어아댄타퍼아오 지정
+    //4.데이터소스, 델리게이트 연결
+    //5.데이터소스, 델리게이트 구현
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        // Configure the cell...
-
+        let target = Memo.dummyMemoList[indexPath.row]
+        cell.textLabel?.text = target.content
+        cell.detailTextLabel?.text = formatter.string(from: target.insertDate)
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
