@@ -15,6 +15,7 @@
 		78DC20F922CEDF9F0035492B /* DyMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78DC20F722CEDF9F0035492B /* DyMemo.xcdatamodeld */; };
 		78DC20FB22CEDFA00035492B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78DC20FA22CEDFA00035492B /* Assets.xcassets */; };
 		78DC20FE22CEDFA00035492B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78DC20FC22CEDFA00035492B /* LaunchScreen.storyboard */; };
+		78E2C20D22D0A24B003E8957 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E2C20C22D0A24B003E8957 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		78DC20FA22CEDFA00035492B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78DC20FD22CEDFA00035492B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78DC20FF22CEDFA00035492B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E2C20C22D0A24B003E8957 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				78DC20F722CEDF9F0035492B /* DyMemo.xcdatamodeld */,
 				78C83D2122CEF3B500992EE2 /* MemoListTableViewController.swift */,
 				78CFBEBC22CF23CF009B0DA2 /* ComposeViewController.swift */,
+				78E2C20C22D0A24B003E8957 /* DetailViewController.swift */,
 			);
 			path = DyMemo;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				78CFBEBD22CF23CF009B0DA2 /* ComposeViewController.swift in Sources */,
 				78C83D2022CEF21000992EE2 /* Model.swift in Sources */,
 				78DC20F922CEDF9F0035492B /* DyMemo.xcdatamodeld in Sources */,
+				78E2C20D22D0A24B003E8957 /* DetailViewController.swift in Sources */,
 				78DC20F122CEDF9F0035492B /* AppDelegate.swift in Sources */,
 				78C83D2222CEF3B500992EE2 /* MemoListTableViewController.swift in Sources */,
 			);
