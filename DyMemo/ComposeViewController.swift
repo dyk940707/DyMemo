@@ -10,6 +10,7 @@ import UIKit
 
 class ComposeViewController: UIViewController {
 
+    var editTarget: Memo?
     //취소 버튼 기능 구현
     @IBAction func close(_ sender: Any) {
         dismiss(animated: true, completion: nil)
@@ -18,7 +19,12 @@ class ComposeViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         let memo = memoTextView.text
         
+        if let editTarget = editTarget {
+            editTarget.content = memo
+            DataManager.shared.saveContext()
+        } else {
         DataManager.shared.addNewMemo(memo!)
+    }
         dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var memoTextView: UITextView!
@@ -27,7 +33,13 @@ class ComposeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let memo = editTarget {
+            navigationItem.title = "메모 편집"
+            memoTextView.text = memo.content
+        } else {
+            navigationItem.title = "새 메모"
+            memoTextView.text = ""
+        }
     }
     
 

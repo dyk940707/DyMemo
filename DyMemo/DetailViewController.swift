@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var memoTableView: UITableView!
     let formatter: DateFormatter = {
         let f = DateFormatter()
         f.dateStyle = .long
@@ -20,10 +21,22 @@ class DetailViewController: UIViewController {
     
     var memo: Memo?    
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination.children.first as? ComposeViewController {
+            vc.editTarget = memo
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        memoTableView.reloadData()
     }
     
 

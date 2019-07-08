@@ -154,7 +154,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA5-r3-11G">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Item" id="aBI-bF-Aod"/>
+                                    <barButtonItem systemItem="compose" id="aBI-bF-Aod">
+                                        <connections>
+                                            <segue destination="S8G-Pf-eBR" kind="presentation" id="eaU-X5-lnh"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Uf-bw-tP3">
@@ -214,10 +218,16 @@
                         <viewLayoutGuide key="safeArea" id="1Fz-Ex-a6Z"/>
                     </view>
                     <navigationItem key="navigationItem" title="메모보기" id="ZU6-yQ-m6L"/>
+                    <connections>
+                        <outlet property="memoTableView" destination="0Uf-bw-tP3" id="4we-nP-AlO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7sQ-23-qBn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1432.8" y="792.95352323838085"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="eaU-X5-lnh"/>
+    </inferredMetricsTieBreakers>
 </document>
