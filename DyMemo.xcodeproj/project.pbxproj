@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		788C855222D2D8A1001C1674 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788C855122D2D8A1001C1674 /* DataManager.swift */; };
 		78C83D2022CEF21000992EE2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C83D1F22CEF21000992EE2 /* Model.swift */; };
 		78C83D2222CEF3B500992EE2 /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C83D2122CEF3B500992EE2 /* MemoListTableViewController.swift */; };
 		78CFBEBD22CF23CF009B0DA2 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CFBEBC22CF23CF009B0DA2 /* ComposeViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		788C855122D2D8A1001C1674 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		78C83D1F22CEF21000992EE2 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		78C83D2122CEF3B500992EE2 /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		78CFBEBC22CF23CF009B0DA2 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				78C83D2122CEF3B500992EE2 /* MemoListTableViewController.swift */,
 				78CFBEBC22CF23CF009B0DA2 /* ComposeViewController.swift */,
 				78E2C20C22D0A24B003E8957 /* DetailViewController.swift */,
+				788C855122D2D8A1001C1674 /* DataManager.swift */,
 			);
 			path = DyMemo;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				78CFBEBD22CF23CF009B0DA2 /* ComposeViewController.swift in Sources */,
 				78C83D2022CEF21000992EE2 /* Model.swift in Sources */,
 				78DC20F922CEDF9F0035492B /* DyMemo.xcdatamodeld in Sources */,
+				788C855222D2D8A1001C1674 /* DataManager.swift in Sources */,
 				78E2C20D22D0A24B003E8957 /* DetailViewController.swift in Sources */,
 				78DC20F122CEDF9F0035492B /* AppDelegate.swift in Sources */,
 				78C83D2222CEF3B500992EE2 /* MemoListTableViewController.swift in Sources */,

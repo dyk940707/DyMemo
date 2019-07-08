@@ -17,8 +17,8 @@ class ComposeViewController: UIViewController {
     //새로운 메모 저장
     @IBAction func save(_ sender: Any) {
         let memo = memoTextView.text
-        let newMemo = Memo(content: memo ?? "")
-        Memo.dummyMemoList.append(newMemo)
+        
+        DataManager.shared.addNewMemo(memo!)
         dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var memoTextView: UITextView!
